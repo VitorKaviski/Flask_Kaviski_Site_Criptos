@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<!-- Icon -->
+		<link rel="icon" type="image/png" href="./img/logo.png" />
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="img/favicon-144.png">
+		<meta name="msapplication-config" content="/browserconfig.xml">
+		<meta charset="UTF-8" />
+		<meta name="description" content="📺 A Dashboard with the price movements of BTC/USD (Bitcoin/US-Dollar) 💹">
+
+		<link rel="stylesheet" href="css/styles.css?v=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+		<title>BTC/USD - Kaviski</title>
+	</head>
+	<body>
+		<div class="tradingview-widget-container">
+			<div id="tradingview_417af"></div>
+			<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+			<script type="text/javascript">
+				new TradingView.widget({
+					"autosize": true,
+					"symbol": "COINBASE:BTCUSD",
+					"interval": "W",
+					"timezone": "Europe/Zurich",
+					"theme": "Dark",
+					"style": "1",
+					"locale": "en",
+					"toolbar_bg": "#f1f3f6",
+					"enable_publishing": false,
+					"withdateranges": true,
+					"hide_side_toolbar": false,
+					"allow_symbol_change": true,
+					"details": false,
+					"studies": [
+						"PivotPointsHighLow@tv-basicstudies",
+						"RSI@tv-basicstudies",
+						"StochasticRSI@tv-basicstudies",
+						"Volume@tv-basicstudies"
+					],
+					"container_id": "tradingview_417af"
+				});
+			</script>
+		</div>
+	</body>
+</html>
